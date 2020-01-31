@@ -1,2 +1,1 @@
-# SentiPers
-A Sentiment Analysis Corpus for Persian
+# SentiPers: A Sentiment Analysis Corpus for Persian
