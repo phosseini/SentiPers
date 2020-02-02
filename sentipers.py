@@ -7,9 +7,28 @@ class SentiPers:
     def __init__(self):
         self.main_path = "data/main/"
         self.extra_path = "data/extra/"
+        self.sentipers_path = "data/sentipers.xlsx"
         self.sentences_columns = ["sid", "text", "polarity", "file"]
 
-    def read_sentences(self, polarity=[]):
+    def sentipers_to_excel(self):
+        """
+        read all sentences in sentipers into a data frame and save them in a single excel file
+        :return:
+        """
+        df = self.read_all_sentences()
+        df.to_excel(self.sentipers_path, header=True, index=False, encoding='utf8')
+
+    def read_all_sentences(self, polarity=[]):
+        """
+        reading all sentences from main and extra folders
+        :param polarity: filter for polarity. e.g. ["-1", "+1"]. possible value: ["-2", "-1", "0", "+1", "+2"]
+        :return:
+        """
+        df = self.read_sentences_main(polarity=polarity)
+        df = df.append(self.read_sentences_extra(polarity=polarity))
+        return df
+
+    def read_sentences_main(self, polarity=[]):
         """
         read all sentences from the corpus
         :param polarity: filter for polarity. e.g. ["-1", "+1"]. possible value: ["-2", "-1", "0", "+1", "+2"]
@@ -22,7 +41,7 @@ class SentiPers:
             for sentence in sents:
                 if len(polarity) == 0 or sentence.attrib["Value"] in polarity:
                     tmp_df = tmp_df.append([{'sid': sentence.attrib["ID"], 'text': sentence.text,
-                                             'polarity': sentence.attrib["Value"],
+                                             'polarity': str(sentence.attrib["Value"]),
                                              'file': full_path}], ignore_index=True)
             return tmp_df
 
@@ -69,8 +88,8 @@ class SentiPers:
                         else:
                             # check if it's time to save sentence info
                             if "[@@@]" in line and (len(polarity) == 0 or label in polarity):
-                                df = df.append([{'sid': '', 'text': sentence.strip(),
-                                                 'polarity': label,
+                                df = df.append([{'sid': '-', 'text': sentence.strip(),
+                                                 'polarity': str(label),
                                                  'file': full_path}], ignore_index=True)
                                 sentence = ""
                                 label = ""
