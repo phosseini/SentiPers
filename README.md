@@ -21,7 +21,7 @@
 
 In the version published in this repository, there are more than `15,500` unique sentences with polarity labels in the range of `["-2", "-1", "0", "+1", "+2"]` with `-2` being `very negative`, `+2` being `very positive`, and `0` being `neutral`.
 
-SentiPers was developed a while ago (around 2014) and is not under active expansion or development. We are aware of the fact that since creating SentiPers, there have also been other Sentiment corpora developed for Persian, however, we still believe SentiPers is a rich resource that can be extremely useful in different applications and hypothesis testing in research around Sentiment Analysis in Persian.
+SentiPers was developed a while ago (around 2014) and is not under active expansion or development. We are aware of the fact that since creating SentiPers, there have also been other sentiment corpora developed for Persian, however, we still believe SentiPers is a rich resource that can be extremely useful in different applications and hypothesis testing in research around Sentiment Analysis in Persian.
 
 ------------
 ### Repository files
@@ -35,6 +35,10 @@ All the SentiPers files are located in the `data` folder:
 We have also included two jupyter notebooks in this repository:
 * `demo.ipynb` in this notebook, we have demonstrated how you can use the methods in `sentipers.py`
 * `modify.ipynb` in this notebook, we have shown how you can modify SentiPers entries. The main purpose of including such a notebook is modifying the polarity labels that may have incorrectly assigned to some sentences.
+
+### Requirements
+* You need to install `pandas` to use methods in `sentipers.py`. Detailed instruction to install `pandas` can be found [here](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html).
+* **Important:** You also need to install `qgrid` if you want to use the `modify.ipynb` to update SentiPers. Instructions for installing `qgrid` can be found [here](https://github.com/quantopian/qgrid). `qgrid` is a widget for interactively working (editing) data frames in jupyter notebook.
 
 ------------
 ### Contributions
