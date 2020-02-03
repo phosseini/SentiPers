@@ -17,28 +17,28 @@
 </div>
 
 ------------
-**SentiPers** is one of the first corpora developed for Sentiment Analysis in Persian. Documents in SentiPers are manually annotated in different levels. We not only assigned polarity labels to sentences and documents, but also annotated pairs of `target` and `opinion` (e.g. in "This phone is really good", "phone" is a `target` and "really good" is an `opinion`). 
+**SentiPers** is one of the first corpora developed for Sentiment Analysis in Persian. Documents in SentiPers are manually annotated at different levels. We not only assigned polarity labels to sentences and documents, but also annotated pairs of `target` and `opinion` words (e.g. in "This phone is really good", "phone" is a `target` and "really good" is an `opinion`, respectively). 
 
-In current version published in this repository, there are more than `15,500` unique sentences with polarity labels in the range of `["-2", "-1", "0", "+1", "+2"]` with `-2` being `very negative`, `+2` being `very positive`, and `0` being `neutral`.
+In the version published in this repository, there are more than `15,500` unique sentences with polarity labels in the range of `["-2", "-1", "0", "+1", "+2"]` with `-2` being `very negative`, `+2` being `very positive`, and `0` being `neutral`.
 
-SentiPers was developed a while ago (around 2014) and is not under active expansion or development. We are aware of the fact that since creating SentiPers, there have also been other Sentiment corpora developed for Persian, however, we still believe SentiPers is a rich resource that can be extremely useful in different hypothesis testing in research around Sentiment Analysis in Persian.
+SentiPers was developed a while ago (around 2014) and is not under active expansion or development. We are aware of the fact that since creating SentiPers, there have also been other Sentiment corpora developed for Persian, however, we still believe SentiPers is a rich resource that can be extremely useful in different applications and hypothesis testing in research around Sentiment Analysis in Persian.
 
 ------------
 ### Repository files
 All the SentiPers files are located in the `data` folder:
 * `data`
   * `main` original files of SentiPers that we made publicly available in XML format.
-  * `extra` extra files in a different format than the XML files in `main` folder. These are those files we decided to make public after publishing the original files.
+  * `extra` extra files in a different format than the XML files in the `main` folder. These are files we decided to make public after publishing the original files.
   * `sentipers.xlsx` a single excel file that includes all the unique sentences from `main` and `extra` folders. We have included methods in `sentipers.py` to generate this file, in case you want to remove the file and have a fresh version.
 
 
-We have also included two jupyter notebook in this repository:
+We have also included two jupyter notebooks in this repository:
 * `demo.ipynb` in this notebook, we have demonstrated how you can use the methods in `sentipers.py`
 * `modify.ipynb` in this notebook, we have shown how you can modify SentiPers entries. The main purpose of including such a notebook is modifying the polarity labels that may have incorrectly assigned to some sentences.
 
 ------------
 ### Contributions
-Even though we are not actively expanding or developing SentiPers, but we welcome and appreciate any contribution to SentiPers to make it a better resource for Persian Natural Language Processing. Feel free to reach out to [Pedram Hosseini](mailto:pdr.hosseini@gmail.com) if you have any suggestion/idea. We will also be happy to review your pull request if you think any changes can be made to the SentiPers or helper methods in `sentipers.py`. 
+Even though we are not actively expanding or developing SentiPers, we welcome and appreciate any contribution to SentiPers to make it a better resource for Persian Natural Language Processing. Feel free to reach out to [Pedram Hosseini](mailto:pdr.hosseini@gmail.com) if you have any suggestion/idea. We will also be happy to review your pull requests if you think any changes can be made to the SentiPers or helper methods in `sentipers.py`. 
 
 ### Next steps:
 * I'll try to add more explanations in Persian for those who might prefer to read instructions in that language.
@@ -47,7 +47,7 @@ Even though we are not actively expanding or developing SentiPers, but we welcom
 ------------
 ### Citation
 
-If you found [SentiPers](https://arxiv.org/abs/1801.07737) useful or used it in your work, you can use the following infomration for citation:
+If you found [SentiPers](https://arxiv.org/abs/1801.07737) useful or used it in your work, you can use the following information for citation:
 ```
 @article{hosseini2018sentipers,
   title={SentiPers: A sentiment analysis corpus for Persian},
