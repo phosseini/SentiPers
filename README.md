@@ -16,7 +16,7 @@
 از تمامی علاقمندان دعوت میکنیم که برای بهتر شدن این مجموعه ما را همیاری کنند. بهتر شدن سنتی پرس به عنوان یک منبع رایگان در نهایت میتواند در بسیاری از تحقیقات مربوط به تحلیل احساس در زبان فارسی یاریگر همگان باشد.
 </div>
 
-
+------------
 **SentiPers** is one of the first corpora developed for Sentiment Analysis in Persian. Documents in SentiPers are manually annotated in different levels. We not only assigned polarity labels to sentences and documents, but also annotated pairs of `target` and `opinion` (e.g. in "This phone is really good", "phone" is a `target` and "really good" is an `opinion`). 
 
 In current version published in this repository, there are more than `15,500` unique sentences with polarity labels in the range of `["-2", "-1", "0", "+1", "+2"]` with `-2` being `very negative`, `+2` being `very positive`, and `0` being `neutral`.
