@@ -5,9 +5,9 @@ import pandas as pd
 
 class SentiPers:
     def __init__(self):
-        self.main_path = "data/main/"
-        self.extra_path = "data/extra/"
-        self.sentipers_path = "data/sentipers.xlsx"
+        self.main_path = "../data/main/"
+        self.extra_path = "../data/extra/"
+        self.sentipers_path = "../data/sentipers.xlsx"
         self.sentences_columns = ["sid", "text", "polarity", "file"]
 
     def sentipers_to_excel(self):
