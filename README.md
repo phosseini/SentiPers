@@ -43,7 +43,7 @@ We welcome and appreciate any contribution to SentiPers to make it a better publ
 ### Citation
 
 If you found [SentiPers](https://arxiv.org/abs/1801.07737) useful or used it in your work, you can use the following information to cite our work:
-```
+```bibtex
 @article{hosseini2018sentipers,
   title={SentiPers: A sentiment analysis corpus for Persian},
   author={Hosseini, Pedram and Ramaki, Ali Ahmadian and Maleki, Hassan and Anvari, Mansoureh and Mirroshandel, Seyed Abolghasem},
