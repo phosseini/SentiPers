@@ -15,7 +15,6 @@
 
 In the version published in this repository, there are more than `15,500` unique sentences with polarity labels in the range of `["-2", "-1", "0", "+1", "+2"]` with `-2` being `very negative`, `+2` being `very positive`, and `0` being `neutral`.
 
-------------
 ### Repository files
 All the SentiPers files are located in the `data` folder:
 * `data`
@@ -34,15 +33,9 @@ We have also included two jupyter notebooks in this repository:
 * You can also use the following command to install all the requirements: ```pip install -r requirements.txt```
 
 
+### How to cite `SentiPers`:
 
-------------
-### Contributions
-We welcome and appreciate any contribution to SentiPers to make it a better publicly available resource for Natural Language Processing and Sentiment Analysis. Feel free to reach out to [Pedram Hosseini](mailto:pdr.hosseini@gmail.com) if you have any suggestion/idea. We will also be happy to review your pull requests if you think any changes can be made to the SentiPers or helper methods in `sentipers.py`. 
-
-------------
-### Citation
-
-If you found [SentiPers](https://arxiv.org/abs/1801.07737) useful or used it in your work, you can use the following information to cite our work:
+If you found [SentiPers](https://arxiv.org/abs/1801.07737) useful or used it in your work, please use the following information to cite our paper:
 ```bibtex
 @article{hosseini2018sentipers,
   title={SentiPers: A sentiment analysis corpus for Persian},
@@ -51,3 +44,6 @@ If you found [SentiPers](https://arxiv.org/abs/1801.07737) useful or used it in 
   year={2018}
 }
 ```
+
+### How to contribute to SentiPers:
+We welcome and appreciate any contribution to SentiPers to make it a better publicly available resource for Natural Language Processing and Sentiment Analysis. Feel free to reach out to [Pedram Hosseini](mailto:pdr.hosseini@gmail.com) if you have any suggestion/idea. We will also be happy to review your pull requests if you think any changes can be made to the SentiPers or helper methods in `sentipers.py`.
