@@ -15,7 +15,7 @@ ipython @ file:///opt/concourse/worker/volumes/live/8c453bb6-500b-4747-778c-a236
 ipython-genutils==0.2.0
 ipywidgets==7.5.1
 jedi @ file:///opt/concourse/worker/volumes/live/e6f84406-1fad-482f-62d9-34c207744fff/volume/jedi_1592841896228/work
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib==0.14.1
 json5==0.9.5
 jsonschema==3.2.0
