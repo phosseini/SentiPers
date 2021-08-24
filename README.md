@@ -20,7 +20,7 @@ All the SentiPers files are located in the `data` folder:
 * `data`
   * `main` original files of SentiPers that we made publicly available in XML format.
   * `extra` extra files in a different format than the XML files in the `main` folder. These are the files we decided to make public after publishing the original files.
-  * `sentipers.xlsx` a single excel file that includes all the unique sentences from `main` and `extra` folders. We have included methods in `sentipers.py` to generate this file, in case you want to remove the file and have a fresh copy.
+  * `sentipers.xlsx` a single excel file that includes all the unique sentences from `main` and `extra` folders. We put the methods we wrote to generate this file in [`sentipers.py`](https://github.com/phosseini/SentiPers/blob/master/src/sentipers.py), in case you want to remove the file and have a fresh copy.
 
 
 We have also included two jupyter notebooks in this repository:
@@ -28,10 +28,11 @@ We have also included two jupyter notebooks in this repository:
 * `modify.ipynb` in this notebook, we have shown how you can modify SentiPers entries. The main purpose of including such a notebook is modifying the polarity labels that may have incorrectly assigned to some sentences.
 
 ### Requirements
-* You need to install `pandas` to use methods in `sentipers.py`. Detailed instruction to install `pandas` can be found [here](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html).
+* You can install the requirements by running the following command: ```pip install -r requirements.txt```
 * **Important:** You also need to install `qgrid` if you want to use the `modify.ipynb` to update SentiPers. Instructions for installing `qgrid` can be found [here](https://github.com/quantopian/qgrid). `qgrid` is a widget for interactively working (editing) data frames in jupyter notebook.
-* You can also use the following command to install all the requirements: ```pip install -r requirements.txt```
 
+### How to contribute to SentiPers:
+We welcome and appreciate any contribution to SentiPers to make it a better publicly available resource for Natural Language Processing and Sentiment Analysis. Feel free to reach out to [Pedram Hosseini](mailto:pdr.hosseini@gmail.com) if you have any suggestion/idea. We will also be happy to review your pull requests if you think any changes can be made to the SentiPers or helper methods in `sentipers.py`.
 
 ### How to cite `SentiPers`:
 
@@ -44,6 +45,3 @@ If you found [SentiPers](https://arxiv.org/abs/1801.07737) useful or used it in 
   year={2018}
 }
 ```
-
-### How to contribute to SentiPers:
-We welcome and appreciate any contribution to SentiPers to make it a better publicly available resource for Natural Language Processing and Sentiment Analysis. Feel free to reach out to [Pedram Hosseini](mailto:pdr.hosseini@gmail.com) if you have any suggestion/idea. We will also be happy to review your pull requests if you think any changes can be made to the SentiPers or helper methods in `sentipers.py`.
